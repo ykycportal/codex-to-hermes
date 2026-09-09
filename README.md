@@ -24,7 +24,6 @@ bash codex-to-hermes.sh /path/to/repo --recursive --scan
 ## What It Does
 
 - Converts `SKILL.md` files from Codex CLI format to Hermes Agent format
-- Handles plugin manifests (`.codex-plugin/plugin.json`)
 - Updates YAML frontmatter (name, description, tags, triggers)
 - Preserves the skill body content
 - Optional malware scanning before conversion
@@ -35,7 +34,8 @@ This is a **skill format converter**, not a full migration tool:
 
 - ❌ No MCP configuration handling (not portable between tools)
 - ❌ No routing table conversion (tool-specific)
-- ❌ No dependency resolution
+- ❌ No plugin manifest conversion
+- ❌ No test migration
 - ❌ No security audit (use external scanners for that)
 
 For complex repos with MCP configs or custom routing, manual review is recommended.

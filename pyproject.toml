@@ -21,6 +21,3 @@ dev = ["pytest>=8.0.0"]
 
 [tool.setuptools.packages.find]
 where = ["."]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
