@@ -17,14 +17,10 @@ keywords = ["codex", "hermes", "skills", "converter", "security"]
 dependencies = []
 
 [project.optional-dependencies]
-scan = []
 dev = ["pytest>=8.0.0"]
 
-[project.scripts]
-codex-to-hermes = "codex_to_hermes.cli:main"
-
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["."]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
