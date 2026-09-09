@@ -1,6 +1,7 @@
 # codex-to-hermes
 
-Convert Codex CLI skills/plugins into Hermes Agent-compatible skills.
+safely Convert Codex CLI skills/plugins into Hermes Agent-compatible skills by scanning for backdoorand redflags before converting and implementing
+
 
 ## Quick Start
 
